@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/bootstrap.css/bootstrap.min.css">
+    <title>Média FIAP</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        align-items: center;
+        text-align: center;
+        background-image: url(/img/8FDA4A31-A1EB-47EA-8040-433820CCC5F9.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .principal {
+        background-color: white;
+    }
+
+
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    refrash {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+</style>
+
+<body>
+    <div class="container-fluid  bg-dark  ">
+        <header class="d-flex justify-content-center bg-dark w-100  py-3">
+            <div class="text-center">
+                <img src="/img/download-removebg-preview.png" class="rounded bg-dark" alt="...">
+            </div>
+        </header>
+    </div>
+
+    <!-- Container -->
+
+    <div class="container mt-3 mb-3 ">
+        <div class="row-4  justify-content-center ml-auto  mr-auto-4 ">
+            <!-- CP -->
+            <div class="col text-center principal p-5 rounded ">
+                <h1 class="text-sm-start">Calcule sua média</h1>
+                <h2 class="text-sm-start">Digite as notas dos checkpoints </h2>
+                <p class="text-sm-start"><span>(caso não tenha feito algum ele tera o valor padrão de 0)</span></p>
+                <div class="input-group input-group-sm mb-3">
+                    <p class="text-sm-start">CP1</p> <input type="number" class="form-control w-100 rounded " name=""
+                        id="CP1-ht" placeholder="0">
+                    <p class="text-sm-start">CP2</p> <input type="number" class="form-control w-100 rounded" name=""
+                        id="CP2-ht" placeholder="0">
+                    <p class="text-sm-start">CP3</p> <input type="number" class="form-control w-100 rounded" name=""
+                        id="CP3-ht" placeholder="0">
+                </div>
+
+
+                <h2 class="text-sm-start">Digite as notas dos dois Sprint </h2>
+                <p class="text-sm-start"><span>(caso não tenha feito algum ele tera o valor padrão de0)</span> </p>
+                <div class="input-group input-group-sm mb-3">
+                    <p class="text-sm-start">Sprint 1</p> <input type="number" class="form-control w-100 rounded"
+                        name="" id="sptint1-ht" placeholder="0">
+                    <p class="text-sm-start">Sprint 2</p> <input type="number" class="form-control w-100 rounded"
+                        name="" id="sptint2-ht" placeholder="0">
+
+                </div>
+
+
+                <h2>Digite a nota da Prova Semestra</h2>
+                <p><span>(Caso não tenha feito será considerado 0)</span> </p>
+
+                <div class="input-group input-group-sm mb-3">
+                    <p>Semestral</p> <input type="number" class="form-control w-100 rounded" name="" id="GS-ht"
+                        placeholder="0">
+                </div>
+
+
+                <input type="button" class="btn btn-success mt-3" value="calcular média" onclick="calcular()">
+                <button id="refresh" type="button" class="btn mt-3 text-center  btn-primary">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class=" bi  bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z">
+                        </path>
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div>
+                    <p class="media" id="resp-p"></p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid  mw-100 ">
+        <footer class="d-flex justify-content-center bg-dark mw-100 py-5">
+            <p class="col-md-4 mb-0  text-light">Git:  <i>@Joao-VitorGD1703</i><br> Feito por um aluno da fiap</p>
+            
+
+
+
+        </footer>
+    </div>
+
+    <script src="/index.js"></script>
+
+    <script src="/bootstrap.js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
